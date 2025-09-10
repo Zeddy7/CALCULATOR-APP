@@ -5,29 +5,41 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<title>CALCULTOR</title>
+		<title>CALCULATOR</title>
+		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<div id="buttons">
-            <div id="display"></div>
-			<button onclick="clicked('7')">7</button>
-			<button onclick="clicked('8')">8</button>
-			<button onclick="clicked('9')">9</button>
-			<button>DEL</button>
-			<button onclick="clicked('0')">AC</button>
-			<button onclick="clicked('4')">4</button>
-			<button onclick="clicked('5')">5</button>
-			<button onclick="clicked('6')">6</button>
-			<button onclick="clicked('x')">x</button>
-			<button onclick="clicked('÷')">÷</button>
-			<button onclick="clicked('1')">1</button>
-			<button onclick="clicked('2')">2</button>
-			<button onclick="clicked('3')">3</button>
-			<button onclick="clicked('+')">+</button>
-			<button onclick="clicked('-')">-</button>
-			<button onclick="clicked('0')">0</button>
-			<button onclick="clicked('.')">.</button>
-			<button class="equals-to" onclick="clicked('.')">=</button>
+		<div id="main">
+			<input id="display"></input>
+			<div class="button-container">
+				<button onclick="clicked('clear')" class="delete">CLEAR</button>
+				<button onclick="clicked('ac')">AC</button>
+				<button onclick="clicked(' / ')">÷</button>
+			</div>
+			<div class="buttons-container">
+				<button onclick="clicked('7')">7</button>
+				<button onclick="clicked('8')">8</button>
+				<button onclick="clicked('9')">9</button>
+				<button onclick="clicked(' * ')">x</button>
+			</div>
+			<div class="buttons-container">
+				<button onclick="clicked('4')">4</button>
+				<button onclick="clicked('5')">5</button>
+				<button onclick="clicked('6')">6</button>
+				<button onclick="clicked(' + ')">+</button>
+			</div>
+			<div class="buttons-container">
+				<button onclick="clicked('1')">1</button>
+				<button onclick="clicked('2')">2</button>
+				<button onclick="clicked('3')">3</button>
+				<button onclick="clicked(' - ')">-</button>
+			</div>
+			<div class="button-container">
+				<button onclick="clicked('0')" class="zero">0</button>
+				<button onclick="clicked('.')">.</button>
+				<button class="equals-to" onclick="calculate()">=</button>
+			</div>
+			</div>
 		</div>
 		<script src="./script.js"></script>
 	</body>

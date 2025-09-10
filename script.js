@@ -11,9 +11,8 @@ const divideNumbers = function (num1, num2) {
 	return num1 / num2;
 };
 
-let number1, operator, number2;
-
 const operate = function (num1, operation, num2) {
+	// let number1, operator, number2;
 	switch (operation) {
 		case "+":
 			return addNumbers(num1, num2);
@@ -33,27 +32,41 @@ const operate = function (num1, operation, num2) {
 const display = document.querySelector("#display");
 const equalsTo = document.querySelector(".equals-to");
 
-let fullDisplay = "";
+let displayed = [];
+let fullDisplay = [];
+let numbers = "1234567890";
 
 function clicked(number) {
-	display.textContent += number;
-	while
-	let content = []
-	content.push(number)
-	let array = ['+', '-', '/', 'x']
-	if (!array.include(number)) {
-		num1 = number
-	} else {
-		
+	fullDisplay.push(number);
+	console.log(fullDisplay);
+	if (numbers.includes(number)) {
+		displayed.push(number);
 	}
-		console.log(num1)
-	// function calculation(num1, operand, num2) {
-
-	// 	while (display.length < 2) {
-	// 		fullDisplay = display.textContent;
-	// 		// number1 = number
-	// 	}
-	// }
+	if (number === "clear") {
+		display.value = "";
+		displayed.length = 0;
+	} else if (number === "ac") {
+		display.value = displayed.join("").slice(0, -1);
+		try {
+			displayed.length = displayed.length - 1;
+		} catch (error) {
+			console.log("error");
+		}
+	} else {
+		display.value += number;
+		// displayed += number
+	}
+	// console.log(fullDisplay.join(' + '))
+	function calculate() {
+		display.value = operate(...fullDisplay);
+		display.value = clicked("clear");
+		// if (fullDisplay.includes("+")) {
+		// 	display.value = );
+		// }
+		// display.value = Math.round(operate(display.value)) / 100000
+	}
 }
 
-console.log(operate(1, "/", 7));
+function calculate() {
+	display.value = Math.round(eval(display.value)) / 1000;
+}
