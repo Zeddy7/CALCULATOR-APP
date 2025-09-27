@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>CALCULATOR</title>
-		<link rel="stylesheet" href="./styles.css" />
-	</head>
-	<body>
-		<div id="main">
-			<div id="displays">
-				<input class="previous"></input>
-				<input id="display" placeholder="0"></input>
-			</div>
-			<div class="button-container">
-				<button class="delete">AC</button>
-				<button>DEL</button>
-				<button>÷</button>
-			</div>
-			<div class="buttons-container">
-				<button>7</button>
-				<button>8</button>
-				<button>9</button>
-				<button>x</button>
-			</div>
-			<div class="buttons-container">
-				<button>4</button>
-				<button>5</button>
-				<button>6</button>
-				<button>+</button>
-			</div>
-			<div class="buttons-container">
-				<button>1</button>
-				<button>2</button>
-				<button>3</button>
-				<button>-</button>
-			</div>
-			<div class="button-container">
-				<button>0</button>
-				<button>.</button>
-				<button class="equals-to">=</button>
-			</div>
-			</div>
-		</div>
-		<script src="./script.js"></script>
-	</body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>CALCULATOR</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bitcount+Prop+Double+Ink:wght@100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+         rel="stylesheet" />
+      <link rel="stylesheet" href="./styles.css" />
+      <link rel="icon" type="image/x-icon" href="./calcu.svg" />
+   </head>
+   <body>
+      <div class="container">
+         <div class="input-container">
+            <input type="text" class="previous-display" />
+            <input type="text" placeholder="0" class="display" />
+         </div>
+         <div class="button-container">
+            <button class="all-clear">AC</button>
+            <button class="">DEL</button>
+            <button class="">÷</button>
+            <button class="">7</button>
+            <button class="">8</button>
+            <button class="">9</button>
+            <button class="">-</button>
+            <button class="">4</button>
+            <button class="">5</button>
+            <button class="">6</button>
+            <button class="">+</button>
+            <button class="">1</button>
+            <button class="">2</button>
+            <button class="">3</button>
+            <button class="">-</button>
+            <button class="">0</button>
+            <button class="">.</button>
+            <button class="equals">=</button>
+         </div>
+      </div>
+      <script src="./script.js"></script>
+   </body>
 </html>
